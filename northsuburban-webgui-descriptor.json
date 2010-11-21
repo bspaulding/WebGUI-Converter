@@ -1,0 +1,31 @@
+{
+	"hostname" : "http://northsuburbanchamber.com/",
+	"article_urls" : [
+		"welcomechair",
+		"membership",
+		"mac",
+		"spotlight",
+		"contact",
+		"pres_msg",
+		"officers",
+		"about",
+		"join",
+		"areamap",
+		"commerce_xroads",
+		"transportation",
+		"realestate",
+		"healthcare",
+		"education",
+		"hafb",
+		"rac",
+		"fedgov",
+		"magov",
+		"localgov",
+		"gbi",
+		"resources",
+		"event_snapshots",
+		"mem2mem",
+		"directory",
+		"findabusiness"
+	]
+}
