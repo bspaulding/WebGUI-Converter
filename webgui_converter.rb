@@ -2,8 +2,8 @@
 
 require 'rubygems'
 require 'json'
-require 'webgui_scraper.rb'
-require 'wxr_generator.rb'
+require 'lib/webgui_scraper.rb'
+require 'lib/wxr_generator.rb'
 
 def convert_site(hostname, article_urls)
   puts "----------------------------------------\nParsing WebGUI Site: #{hostname}\n----------------------------------------"
