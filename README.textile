@@ -6,8 +6,7 @@ h2. JSON Descriptor
 
 WebGUI Converter uses a file descriptor in JSON format to describe the sites/urls to be parsed:
 
-bc. 
-{
+bc. {
 	"hostname" : "http://somewebguiwebsite.com/",
 	"article_urls" : [
 		"welcome",
@@ -27,8 +26,7 @@ Based on the example above, WebGUIConverter would parse the following urls:
 
 You can supply a single hash, or an array of hashes to parse multiple sites.
 
-bc. 
-[{
+bc. [{
 	"hostname" : "http://somewebguiwebsite.com/",
 	"article_urls" : [
 		"welcome",
@@ -37,7 +35,7 @@ bc.
 		"login",
 		"a-super-cool-article-slug"
 	]
-}, 	{
+}, {
 	"hostname" : "http://anotherwebguiwebsite.com/",
 	"article_urls" : [
 		"welcome",
@@ -50,8 +48,7 @@ bc.
 
 Each hash supplied results in a new WXR file. The above example would result in two xml files:
 
-bc.
-somewebguiwebsite.com-articles-wordpress.xml
+bc. somewebguiwebsite.com-articles-wordpress.xml
 anotherwebguiwebsite.com-articles-wordpress.xml
 
 
