@@ -8,34 +8,50 @@ WebGUI Converter uses a file descriptor in JSON format to describe the sites/url
 
 bc. 
 {
-	"hostname" : "http://northsuburbanchamber.com/",
+	"hostname" : "http://somewebguiwebsite.com/",
 	"article_urls" : [
-		"welcomechair",
-		"membership",
-		"mac",
-		"spotlight",
-		"contact",
-		"pres_msg",
-		"officers",
+		"welcome",
 		"about",
-		"join",
-		"areamap",
-		"commerce_xroads",
-		"transportation",
-		"realestate",
-		"healthcare",
-		"education",
-		"hafb",
-		"rac",
-		"fedgov",
-		"magov",
-		"localgov",
-		"gbi",
-		"resources",
-		"event_snapshots",
-		"mem2mem",
-		"directory",
-		"findabusiness"
+		"signup",
+		"login",
+		"a-super-cool-article-slug"
 	]
 }
+
+Based on the example above, WebGUIConverter would parse the following urls:
+* http://somewebguiwebsite.com/welcome
+* http://somewebguiwebsite.com/about
+* http://somewebguiwebsite.com/signup
+* http://somewebguiwebsite.com/login
+* http://somewebguiwebsite.com/a-super-cool-article-slug
+
+You can supply a single hash, or an array of hashes to parse multiple sites.
+
+bc. 
+[{
+	"hostname" : "http://somewebguiwebsite.com/",
+	"article_urls" : [
+		"welcome",
+		"about",
+		"signup",
+		"login",
+		"a-super-cool-article-slug"
+	]
+}, 	{
+	"hostname" : "http://anotherwebguiwebsite.com/",
+	"article_urls" : [
+		"welcome",
+		"about",
+		"signup",
+		"login",
+		"a-super-cool-article-slug"
+	]
+}]
+
+Each hash supplied results in a new WXR file. The above example would result in two xml files:
+
+bc.
+somewebguiwebsite.com-articles-wordpress.xml
+anotherwebguiwebsite.com-articles-wordpress.xml
+
 
