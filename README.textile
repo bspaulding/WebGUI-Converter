@@ -1,3 +1,41 @@
 h1. WebGUI Converter
 
 *Note:* Currently, only Wordpress WXR format is supported.
+
+h2. JSON Descriptor
+
+WebGUI Converter uses a file descriptor in JSON format to describe the sites/urls to be parsed:
+
+bc. 
+{
+	"hostname" : "http://northsuburbanchamber.com/",
+	"article_urls" : [
+		"welcomechair",
+		"membership",
+		"mac",
+		"spotlight",
+		"contact",
+		"pres_msg",
+		"officers",
+		"about",
+		"join",
+		"areamap",
+		"commerce_xroads",
+		"transportation",
+		"realestate",
+		"healthcare",
+		"education",
+		"hafb",
+		"rac",
+		"fedgov",
+		"magov",
+		"localgov",
+		"gbi",
+		"resources",
+		"event_snapshots",
+		"mem2mem",
+		"directory",
+		"findabusiness"
+	]
+}
+
