@@ -1,0 +1,3 @@
+h1. WebGUI Converter
+
+*Note:* Currently, only Wordpress WXR format is supported.
