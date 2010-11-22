@@ -1,0 +1,19 @@
+[{
+	"hostname" : "http://somewebguiwebsite.com/",
+	"article_urls" : [
+		"welcome",
+		"about",
+		"signup",
+		"login",
+		"a-super-cool-article-slug"
+	]
+}, {
+	"hostname" : "http://anotherwebguiwebsite.com/",
+	"article_urls" : [
+		"welcome",
+		"about",
+		"signup",
+		"login",
+		"a-super-cool-article-slug"
+	]
+}]
