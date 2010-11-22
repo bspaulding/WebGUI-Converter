@@ -14,7 +14,7 @@ def convert_site(hostname, article_urls)
   xml = WXRGenerator.new(hostname, articles).to_xml
   print "Complete\n"; STDOUT.flush
   
-  puts "Writing XML to File: northsuburbanchamber.com-articles-wordpress.xml\n----------------------------------------"
+  puts "Writing XML to File: #{URI.parse(hostname).host}-articles-wordpress.xml\n----------------------------------------"
   
   require 'uri'
   file = File.open("#{URI.parse(hostname).host}-articles-wordpress.xml", 'w')

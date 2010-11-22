@@ -48,5 +48,8 @@ class WXRGenerator
       end
     end
     xml += '</channel></rss>'
+    # Un-Indenting the CDATA. Wordpress chokes on this, if the tag is indented, the CDATA tags don't get stripped.
+    xml.gsub!(/<(content:encoded|wp:meta_value)>\n.*<!\[CDATA\[/, "<\\1>\<\!\[CDATA\[")
+    xml.gsub!(/\]\]>\n.*<\/(content:encoded|wp:meta_value)>/, "]]></\\1>")
   end
 end
